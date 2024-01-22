@@ -237,6 +237,11 @@ function draw() {
 
 
   } else {
+    // Display instructions
+    ctx.fillStyle = "#000";
+    ctx.font = "20px Arial";
+    ctx.fillText("Use arrow keys to move", 10, 30);
+    ctx.fillText("Press spacebar to shoot", 10, 60);
     // Continue the game loop
     setTimeout(() => requestAnimationFrame(draw), 1000 / 60); // Adjust the frame rate if needed
   }
